@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Title</title>
+    <link rel="stylesheet" href="style.css"> <!-- Your main CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <header id="about-sticy">
+        <nav class="navbar">
+            <div class="logo">Store</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="shop.html" class="dropbtn" onclick="toggleMenu(event)">Theme <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">  
+                        <div class="row">
+                            <div class="row">
+                                <div class="column">
+                                    <a href="https://www.zoho.com/commerce/themes.html#health-beauty">Health & Beauty</a>
+                                    <a href="https://www.zoho.com/commerce/themes.html#fashion-clothing">Fashion & Clothing</a>
+                                    <a href="https://www.zoho.com/commerce/themes.html#food-drink">Food & Drink</a>
+                                </div>
+                                <div class="column">
+                                    <a href="https://www.zoho.com/commerce/themes.html#home-garden">Home & Garden</a>
+                                    <a href="https://www.zoho.com/commerce/themes.html#furniture-manufacturing">Furniture & Manufacturing</a>
+                                    <a href="https://www.zoho.com/commerce/themes.html#electronics">Electronics</a>
+                                </div>
+                                <div class="column">
+                                    <a href="https://www.zoho.com/commerce/themes.html#gifts-toys-games">Gifts,Toys, & Games</a>
+                                </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#about"  id="about-link">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="chat.html">Contact Us</a></li>
+
+                <div class="navbar-auth">
+                    <a href="sign in.html" class="btn signin-btn">Sign In</a>
+                    <a href="sign.html" class="btn signup-btn">Sign Up</a>
+                </div>
+            </ul>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search for products..." name="search">
+                <button type="submit" id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <div class="order-btn">
+                <button id="orderBtn">Order Now</button>
+              </div>
+        </nav>
+
+        <!-- Modal for Order Form -->
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Order Now</h2>
+      <form id="orderForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+  
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+  
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">E-mail Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+       <div class="size-container">
+        <!-- <label for="order">Quantity:</label> -->
+        <label for="order">Size:</label>
+        <select id="size" name="size">
+            <option value="selected">Select the Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+        </select>
+        <label for="order" class="qty" id="qty">Quantity:</label>
+        <div class="quantity-container">
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <button type="button" id="add-item-rows" class="btn btn-outline-secondary">
+                <i class="fas fa-plus"></i>
+              </button><input id="order" name="order" value="0" required>
+              <button type="button" id="subtract-item-rows" class="btn btn-outline-secondary">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div><br><br>
+  
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Template for about section-->
+    <section>
+        <div class="template" id="templates">
+            <div class="overlay">
+                <h1>About Us</h1>
+                <p>Welcome to our online store! We offer a wide range of products to suit your needs. Enjoy shopping with us!</p>
+            </div>
+            <img src="online-shop-7090027_1280.webp" alt="Online Shop">
+        </div>
+    </section>
+
+<section>
+    <h3><a href="index.html">Home</a><span>About us</span></h3> 
+    <div class="container">
+        <div class="col left-column">
+            <p>
+                Welcome to our store, your one-stop destination for all things fashion etc. We’re dedicated to providing you with a seamless shopping experience and high-quality products at competitive prices. Whether you're looking for the latest trends, exclusive deals, or timeless essentials, we’ve got you covered.
+            </p>
+        </div>
+        <div class="col right-column">
+            <p>
+                At our Store, we believe that shopping should be easy, enjoyable, and rewarding. Our carefully curated collection features top brands, as well as unique, hard-to-find items that will suit every style and budget. We pride ourselves on delivering exceptional customer service and a hassle-free shopping experience, from browsing to checkout and beyond.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+  <h3>Our Mission</h3>
+    <div class="container">
+        <div class="col left-column">
+          <p>Our mission is to offer you a diverse range of products, all available at the click of a button. We are committed to making sure you find exactly what you're looking for, with the best prices and fast delivery options. We want to bring the latest trends and innovations right to your doorstep.</p>
+          <br><br><h4>Key Elements of an E-commerce Mission Statement:</h4><br>
+          <p>
+            <ul>
+                <li><b>Focus on Customer Experience:</b>"To provide our customers with a seamless and enjoyable online shopping experience, offering a wide selection of high-quality products at competitive prices." </li>
+                <li><b>Emphasis on Innovation:</b>"To revolutionize the way people shop online by creating innovative and user-friendly platforms that connect buyers and sellers seamlessly." </li>
+                <li><b>Sustainability and Ethics:</b>"To empower consumers to make conscious choices by offering ethically sourced and sustainable products, while minimizing our environmental impact." </li>
+                <!-- <li><b>Community Focus:</b>"To build a thriving online community where customers can connect, share ideas, and find inspiration through our curated selection of products." </li> -->
+            </ul>
+          </p>
+        </div>
+        <div class="col right-column">
+        <p>
+           <img src="our mission.jpg" style="height:400px;">
+        </p>
+        </div>
+    </div>
+</section>
+<br><br><br>
+<section class="section-left">
+    <h3>Our Story</h3>
+    <div class="container">
+        <div class="col right-column">
+            <p>
+               <img src="our story.jpg">
+            </p>
+        </div>
+
+        <div class="col left-column ">
+            <p>
+                Raj Fashion was founded in 2007 with one goal in mind: to revolutionize the way you shop for any types of clothes. Our journey started when we noticed a gap in the market for sector 5, Harola, NOIDA. What began as a small idea has since grown into a thriving online marketplace, offering a wide range of any type of clothes for customers around the world.
+                 <br><br>
+                As a family-owned business (or startup), we understand the importance of trust, quality, and customer satisfaction. Over the years, we’ve built lasting relationships with our customers, who return time and again because they know we prioritize their needs.
+                <br>
+                We are also committed to providing competitive prices, so you don’t have to break the bank to get what you love. From fashion and accessories to home goods and tech, we offer a curated selection that will meet your needs and exceed your expectations.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Our Values</h3> 
+    <div class="container">
+        <div class="col left-column">
+            <p>
+               <ul>
+                <li><b>Trust:</b>We work hard to earn and maintain your trust through honesty, reliability, and transparency in everything we do.</li>
+                <li><b>Innovation:</b>We continuously search for new ways to improve our offerings and provide you with the best shopping experience possible.</li>
+                <li><b>Community:</b>we view our customers as part of our extended family. We believe in supporting the communities we serve, whether through charitable initiatives, partnerships, or simple acts of kindness.</li>
+               </ul>
+            </p>
+        </div>
+        <div class="col right-column">
+            <p>
+                <img src="Our Values.webp">
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="about-footer">
+    <div class="rating-container">
+        <h2>Rate our Product</h2>
+        <div class="star-rating" id="star-rating">
+            <span class="fa fa-star" data-index="1"></span>
+            <span class="fa fa-star" data-index="2"></span>
+            <span class="fa fa-star" data-index="3"></span>
+            <span class="fa fa-star" data-index="4"></span>
+            <span class="fa fa-star" data-index="5"></span>
+        </div>
+        <p id="rating-message"></p>
+    </div>   
+</section> 
+
+    <!-- Footer Section -->
+    <section class="footer" id="about-footers">
+        <div class="icons">
+            <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+            <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="#" class="fab fa-github" aria-label="Github"></a>
+            <a href="#" class="fab fa-pinterest" aria-label="Pinterest"></a>
+        </div>
+        <div class="credit">Created by <span>Mr. Ajay Shah</span> | All rights reserved.</div>
+    </section>
+
+    <!-- Include jQuery and script.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src="script.js"></script> <!-- Your custom JavaScript -->
+</body>
+</html>
